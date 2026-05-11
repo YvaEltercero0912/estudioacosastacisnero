@@ -7,31 +7,32 @@
 
   <link rel="stylesheet" href="css/effects.css" />
 
+
+  <!-- Fuentes + íconos -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@200..700&display=swap" rel="stylesheet" />
 
+  <!-- CSS propio -->
   <link rel="stylesheet" href="css/styles.css" />
 
+  <!-- JS propio: define tailwind config + menu + whatsapp -->
   <script src="js/main.js"></script>
 
+  <!-- Tailwind CDN (debe ir DESPUÉS de main.js) -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-
-  <style>
-    .contact-submit {
-      width: 100%;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
 </head>
 
 <body class="bg-background-dark font-display text-white antialiased">
 
+  <!-- =========================
+       HEADER
+  ========================== -->
   <header class="site-header">
     <div class="header-container">
 
+      <!-- LOGO -->
       <div class="header-logo">
         <img
           src="assets/img/logo/ChatGPT Image 1 feb 2026, 03_04_36 p.m..png"
@@ -39,6 +40,7 @@
         />
       </div>
 
+      <!-- MARCA -->
       <div class="header-brand">
         <h1 class="brand-name">
           Acosta Cisneros <span class="brand-accent">&amp;</span> Asoc.
@@ -46,6 +48,7 @@
         <p class="brand-subtitle">Abogados Católicos</p>
       </div>
 
+      <!-- NAV DESKTOP -->
       <nav class="header-nav">
         <a href="#servicios" class="nav-link">Servicios</a>
         <a href="#areas" class="nav-link">Áreas de Práctica</a>
@@ -54,11 +57,13 @@
         <a href="#contacto" class="nav-cta">Consulta Gratuita</a>
       </nav>
 
+      <!-- BOTÓN MOBILE -->
       <button class="nav-toggle" id="btnMenu" aria-label="Abrir menú" aria-expanded="false">
         <span class="material-symbols-outlined">menu</span>
       </button>
     </div>
 
+    <!-- NAV MOBILE -->
     <div class="mobile-nav" id="mobileMenu">
       <a href="#servicios" class="mobile-link">Servicios</a>
       <a href="#areas" class="mobile-link">Áreas de Práctica</a>
@@ -68,33 +73,39 @@
     </div>
   </header>
 
+  <!-- =========================
+       MAIN
+  ========================== -->
   <main>
 
-    <section class="hero-section">
-      <div class="hero-bg" style="background-image:url('assets/img/hero/ChatGPT\ Image\ 2\ feb\ 2026\,\ 03_49_50\ p.m..png')">
-        <div class="hero-overlay"></div>
-      </div>
+    <!-- HERO -->
+<section class="hero-section">
+  <div class="hero-bg" style="background-image:url('assets/img/hero/ChatGPT\ Image\ 2\ feb\ 2026\,\ 03_49_50\ p.m..png')">
+    <div class="hero-overlay"></div>
+  </div>
 
-      <div class="hero-content">
-        <div class="hero-line"></div>
+  <div class="hero-content">
+    <div class="hero-line"></div>
 
-        <h2 class="hero-title">
-          Experiencia e <br />
-          <span class="hero-title-accent">Integridad</span> <br />
-          a su servicio
-        </h2>
+    <h2 class="hero-title">
+      Experiencia e <br />
+      <span class="hero-title-accent">Integridad</span> <br />
+      a su servicio
+    </h2>
 
-        <p class="hero-text">
-          Representación legal seria y personalizada, con un enfoque estratégico y confidencial.
-        </p>
+    <p class="hero-text">
+      Representación legal seria y personalizada, con un enfoque estratégico y confidencial.
+    </p>
 
-        <div class="hero-actions">
-          <a href="#equipo" class="btn btn-primary">Nuestra experiencia</a>
-          <a href="#areas" class="btn btn-outline">Saber más</a>
-        </div>
-      </div>
-    </section>
+    <div class="hero-actions">
+      <a href="#equipo" class="btn btn-primary">Nuestra experiencia</a>
+      <a href="#areas" class="btn btn-outline">Saber más</a>
+    </div>
+  </div>
+</section>
 
+
+    <!-- POR QUÉ ELEGIRNOS -->
     <section id="servicios" class="section section-dark">
       <div class="section-container">
         <div class="section-header">
@@ -146,6 +157,7 @@
       </div>
     </section>
 
+    <!-- ÁREAS DE PRÁCTICA -->
     <section id="areas" class="section section-base">
       <div class="section-container">
         <div class="section-header center">
@@ -158,52 +170,67 @@
 
         <div class="areas-grid">
           <article class="area-card">
-            <div class="area-image">
-              <img src="https://estudioacosastacisnero.vercel.app/assets/img/civil.png" alt="Derecho Civil">
-            </div>
+  <div class="area-image">
+    <img src="https://estudioacosastacisnero.vercel.app/assets/img/civil.png" alt="Derecho Civil">
+  </div>
 
-            <h4 class="area-title">Derecho Civil</h4>
-            <p class="area-text">
-              Contratos, daños y perjuicios, responsabilidad civil, ejecuciones.
-            </p>
+  <h4 class="area-title">Derecho Civil</h4>
+  <p class="area-text">
+    Contratos, daños y perjuicios, responsabilidad civil, ejecuciones.
+  </p>
+</article>
+<article class="area-card">
+            <div class="area-image">
+    <img src="https://estudioacosastacisnero.vercel.app/assets/img/constitucional.png" alt="Derecho constitucional">
+  </div>
+            <h4 class="area-title">Derecho constitucional</h4>
+            <p class="area-text">  Defensa de garantías constitucionales, derechos fundamentales y control de legalidad.</p>
           </article>
 
           <article class="area-card">
             <div class="area-image">
-              <img src="https://estudioacosastacisnero.vercel.app/assets/img/flia.png" alt="Derecho de Familia">
-            </div>
+    <img src="https://estudioacosastacisnero.vercel.app/assets/img/previcional.png" alt="Derecho previcional">
+  </div>
+            <h4 class="area-title">Derecho Previcional</h4>
+            <p class="area-text">  Jubilaciones, pensiones, reajustes y asesoramiento integral en trámites previsionales.</p>
+          </article>
+
+          <article class="area-card">
+            <div class="area-image">
+    <img src="https://estudioacosastacisnero.vercel.app/assets/img/flia.png" alt="Derecho Civil">
+  </div>
             <h4 class="area-title">Derecho de Familia</h4>
             <p class="area-text">Divorcios, alimentos, régimen de comunicación, cuidado personal.</p>
           </article>
 
           <article class="area-card">
-            <div class="area-image">
-              <img src="https://estudioacosastacisnero.vercel.app/assets/img/suceccion.png" alt="Sucesiones">
-            </div>
+          <div class="area-image">
+    <img src="https://estudioacosastacisnero.vercel.app/assets/img/suceccion.png" alt="Derecho Civil">
+  </div>
             <h4 class="area-title">Sucesiones</h4>
             <p class="area-text">Herencias, declaratorias, particiones, asesoramiento integral.</p>
           </article>
 
           <article class="area-card">
             <div class="area-image">
-              <img src="https://estudioacosastacisnero.vercel.app/assets/img/laboral.png" alt="Derecho Laboral">
-            </div>
+    <img src="https://estudioacosastacisnero.vercel.app/assets/img/laboral.png" alt="Derecho Civil">
+  </div>
             <h4 class="area-title">Derecho Laboral</h4>
             <p class="area-text">Despidos, indemnizaciones, conflictos laborales, asesoría.</p>
           </article>
 
           <article class="area-card">
             <div class="area-image">
-              <img src="https://estudioacosastacisnero.vercel.app/assets/img/penal.png" alt="Derecho Penal">
-            </div>
+    <img src="https://estudioacosastacisnero.vercel.app/assets/img/penal.png" alt="Derecho Civil">
+  </div>
             <h4 class="area-title">Derecho Penal</h4>
             <p class="area-text">Defensa penal, asistencia en procesos y asesoramiento.</p>
           </article>
 
           <article class="area-card">
             <div class="area-image">
-              <img src="https://estudioacosastacisnero.vercel.app/assets/img/comercial.png" alt="Derecho Comercial">
-            </div>
+    <img src="https://estudioacosastacisnero.vercel.app/assets/img/comercial.png" alt="Derecho Civil">
+  </div>
             <h4 class="area-title">Derecho Comercial</h4>
             <p class="area-text">Contratos comerciales, sociedades, asesoramiento a empresas.</p>
           </article>
@@ -211,6 +238,7 @@
       </div>
     </section>
 
+    <!-- EQUIPO -->
     <section id="equipo" class="section section-dark">
       <div class="section-container">
         <div class="section-header">
@@ -219,99 +247,73 @@
         </div>
 
         <p class="section-subtitle">
-          Somos Acosta Cisneros & Asociados, un estudio jurídico con sede en San Miguel de Tucumán, dedicado a brindar asesoramiento y representación legal integral, con un enfoque profesional, ético y personalizado.
+  Somos Acosta Cisneros & Asociados, un estudio jurídico con sede en San Miguel de Tucumán, dedicado a brindar asesoramiento y representación legal integral, con un enfoque profesional, ético y personalizado.
 
-          Nuestra práctica se sustenta en una sólida formación jurídica, una trayectoria construida sobre la confianza de nuestros clientes y el compromiso permanente con la excelencia en el ejercicio del derecho. Entendemos que cada caso es único y que detrás de cada consulta existe una situación personal, familiar o empresarial que merece atención seria, responsable y confidencial.
+Nuestra práctica se sustenta en una sólida formación jurídica, una trayectoria construida sobre la confianza de nuestros clientes y el compromiso permanente con la excelencia en el ejercicio del derecho. Entendemos que cada caso es único y que detrás de cada consulta existe una situación personal, familiar o empresarial que merece atención seria, responsable y confidencial.
 
-          Trabajamos con una visión clara: ofrecer soluciones jurídicas concretas, estratégicas y eficientes, priorizando siempre la prevención del conflicto y, cuando ello no es posible, una defensa firme y fundada de los derechos e intereses de nuestros representados. Nuestro asesoramiento se caracteriza por la claridad, la cercanía y la transparencia en cada etapa del proceso.
+Trabajamos con una visión clara: ofrecer soluciones jurídicas concretas, estratégicas y eficientes, priorizando siempre la prevención del conflicto y, cuando ello no es posible, una defensa firme y fundada de los derechos e intereses de nuestros representados. Nuestro asesoramiento se caracteriza por la claridad, la cercanía y la transparencia en cada etapa del proceso.
 
-          Como estudio, nos guiamos por valores esenciales: integridad, responsabilidad, compromiso y respeto por la dignidad de la persona. Estos principios orientan nuestra actuación profesional y definen nuestra forma de relacionarnos con quienes confían en nosotros.
+Como estudio, nos guiamos por valores esenciales: integridad, responsabilidad, compromiso y respeto por la dignidad de la persona. Estos principios orientan nuestra actuación profesional y definen nuestra forma de relacionarnos con quienes confían en nosotros.
 
-          Brindamos atención personalizada, con seguimiento directo de cada asunto, manteniendo una comunicación fluida y permanente con nuestros clientes. Nuestro objetivo es acompañarlos con seriedad y vocación de servicio, aportando seguridad jurídica y tranquilidad en la toma de decisiones.
-        </p>
+Brindamos atención personalizada, con seguimiento directo de cada asunto, manteniendo una comunicación fluida y permanente con nuestros clientes. Nuestro objetivo es acompañarlos con seriedad y vocación de servicio, aportando seguridad jurídica y tranquilidad en la toma de decisiones.
+</p>
       </div>
     </section>
 
+    <!-- CONTACTO -->
     <section id="contacto" class="section section-base">
       <div class="section-container">
         <div class="contact-grid">
 
-          <div class="contact-info">
-            <h3 class="section-title">Contactarnos</h3>
-            <div class="section-divider left"></div>
+  <!-- INFO -->
+  <div class="contact-info">
+  <h3 class="section-title">Contactarnos</h3>
+  <div class="section-divider left"></div>
 
-            <div class="map-card">
-              <div class="map-embed">
-                <iframe
-                  src="https://www.google.com/maps?q=Gral.+Jos%C3%A9+Mar%C3%ADa+Paz+688,+San+Miguel+de+Tucum%C3%A1n&output=embed"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  title="Ubicación del Estudio Jurídico">
-                </iframe>
-              </div>
-            </div>
-          </div>
+  <!-- MAPA -->
+  <div class="map-card">
+    <div class="map-embed">
+      <iframe
+        src="https://www.google.com/maps?q=Gral.+Jos%C3%A9+Mar%C3%ADa+Paz+688,+San+Miguel+de+Tucum%C3%A1n&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Ubicación del Estudio Jurídico">
+      </iframe>
+    </div>
+  </div>
+</div>
 
-          <div class="contact-form-card">
-            <form
-              id="contactEmailForm"
-              class="contact-form"
-              action="https://formsubmit.co/alejandrodiaz942013@gmail.com"
-              method="POST"
-            >
-              <input
-                class="form-input"
-                type="text"
-                name="nombre"
-                placeholder="Nombre y apellido"
-                required
-              />
+  <!-- FORM -->
+  <div class="contact-form-card">
+    <form class="contact-form">
+      <input class="form-input" type="text" placeholder="Nombre y apellido" />
+      <input class="form-input" type="email" placeholder="Correo electrónico" />
+      <input class="form-input" type="text" placeholder="Teléfono / WhatsApp" />
+      <textarea class="form-textarea" placeholder="Describa brevemente su consulta"></textarea>
+      <button class="form-submit" type="button">Enviar consulta</button>
+    </form>
+  </div>
 
-              <input
-                class="form-input"
-                type="email"
-                name="email"
-                placeholder="Correo electrónico"
-                required
-              />
+  <!-- MAPA -->
+  
 
-              <input
-                class="form-input"
-                type="text"
-                name="telefono"
-                placeholder="Teléfono / WhatsApp"
-                required
-              />
+</div>
 
-              <textarea
-                class="form-textarea"
-                name="consulta"
-                placeholder="Describa brevemente su consulta"
-                required
-              ></textarea>
-
-              <input type="hidden" name="_subject" value="Nueva consulta desde la web Acosta Cisneros" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_next" value="https://estudioacosastacisnero.vercel.app/#contacto" />
-
-              <button id="contactEmailSubmit" class="contact-submit form-submit" type="submit">
-                Enviar consulta
-              </button>
-            </form>
-          </div>
-
-        </div>
       </div>
     </section>
 
   </main>
 
+  <!-- =========================
+       FOOTER
+  ========================== -->
   <footer class="site-footer">
     <div class="footer-container">
 
       <div class="footer-col">
         <img class="footer-logo" src="https://estudioacosastacisnero.vercel.app/assets/img/logo/ChatGPT Image 1 feb 2026, 03_04_36 p.m..png" alt="Acosta Cisneros & Asoc" />
+        
+
       </div>
 
       <div class="footer-col">
@@ -323,74 +325,47 @@
       </div>
 
       <div class="footer-col">
-        <h5 class="footer-title">Contacto</h5>
+  <h5 class="footer-title">Contacto</h5>
 
-        <ul class="footer-contact-list">
-          <li>
-            <strong>Dirección:</strong><br>
-            Gral. José María Paz 688 oficina 2<br>
-            San Miguel de Tucumán, Tucumán
-          </li>
+  <ul class="footer-contact-list">
+    <li>
+      <strong>Dirección:</strong><br>
+      Gral. José María Paz 688 oficina 2<br>
+      San Miguel de Tucumán, Tucumán
+    </li>
 
-          <li>
-            <strong>Teléfono / WhatsApp:</strong><br>
-            +54 9 351 000-0000
-          </li>
+    <li>
+      <strong>Teléfono / WhatsApp:</strong><br>
+      +54 9 351 000-0000
+    </li>
 
-          <li>
-            <strong>Email:</strong><br>
-            contacto@acostacisneros.com
-          </li>
+    <li>
+      <strong>Email:</strong><br>
+      contacto@acostacisneros.com
+    </li>
 
-          <li>
-            <strong>Horario:</strong><br>
-            Lun a Vie — 9:00 a 18:00
-          </li>
-        </ul>
-      </div>
+    <li>
+      <strong>Horario:</strong><br>
+      Lun a Vie — 9:00 a 18:00
+    </li>
+  </ul>
+</div>
+
 
     </div>
 
     <div class="footer-bottom">
-      © stremudev Todos los derechos reservados.
-      <a
-        href="https://www.instagram.com/stremudev/?next=%2Falexdiazok_22%2F"
-        target="_blank"
-        rel="noopener"
-        class="instagram-btn"
-        aria-label="Instagram"
-      >
-        <img src="https://estudioacosastacisnero.vercel.app/assets/img/icons/instagram.png" alt="Instagram">
-      </a>
+      © byte_craft2025 Todos los derechos reservados. <a 
+  href="https://www.instagram.com/byte_craft2025/" 
+  target="_blank" 
+  rel="noopener"
+  class="instagram-btn"
+  aria-label="Instagram"
+>
+  <img src="/estudio-juridico/assets/img/icons/instagram.png" alt="Instagram">
+</a>
     </div>
   </footer>
-
-  <script src="js/effects.js" defer></script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const form = document.getElementById("contactEmailForm");
-      const submitButton = document.getElementById("contactEmailSubmit");
-
-      if (!form || !submitButton) return;
-
-      submitButton.addEventListener("click", function (event) {
-        event.preventDefault();
-        event.stopPropagation();
-        event.stopImmediatePropagation();
-
-        if (!form.checkValidity()) {
-          form.reportValidity();
-          return;
-        }
-
-        HTMLFormElement.prototype.submit.call(form);
-      }, true);
-
-      form.addEventListener("submit", function (event) {
-        event.stopPropagation();
-      }, true);
-    });
-  </script>
+<script src="js/effects.js" defer></script>
 </body>
 </html>
